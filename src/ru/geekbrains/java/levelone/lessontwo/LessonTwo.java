@@ -10,10 +10,10 @@ public class LessonTwo {
        // System.out.println();
        // diagonalArr();
        // System.out.println();
-       // maxMinArr();
+       maxMinArr();
        // System.out.println();
-        chekBalance();
-        displaceArr(1);
+       // chekBalance();
+        //displaceArr(1);
         
     }
         /*
@@ -22,15 +22,14 @@ public class LessonTwo {
         Для усложнения задачи нельзя пользоваться вспомогательными массивами. Примеры: [ 1, 2, 3 ] при n = 1 (на один вправо) -> [ 3, 1, 2 ]; [ 3, 5, 6, 1] при n = -2 (на два влево) -> [ 6, 1, 3, 5 ].
          При каком n в какую сторону сдвиг можете выбирать сами.
          */
-   private static void displaceArr(int shift) {
-            int[] arr = {1,2,3};
-        for (int i = 0; i < arr.length ;i++) {
-            arr[i]=arr[i + shift];
-            System.out.println(arr[i]);
+  private static void displaceArr(int shift) {
+       //     int[] arr = {1,2,3};
+        //for (int i = 0; i < arr.length ;i++) {
+         //   arr[i]=arr[i + shift];
+         //   System.out.println(arr[i]);
 
 
         }
-    }
 
 
     /*
@@ -47,6 +46,18 @@ public class LessonTwo {
     5. Задать одномерный массив и найти в нем минимальный и максимальный элементы (без помощи интернета);
      */
     private static void maxMinArr() {
+        int[] arr = {2,3,5,2,7,8,12,45};
+        int min = arr[0];
+        int max = arr[0];
+        for (int i = 0; i < arr.length ; i++) {
+            if (min > arr[i]){
+                min = arr[i];
+            } if (max < arr[i]){
+                max = arr[i];
+            }
+
+        }
+        System.out.println(min + " " + max);
     }
 
     /*
