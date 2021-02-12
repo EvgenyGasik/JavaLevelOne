@@ -2,20 +2,51 @@ package ru.geekbrains.java.levelone.lessontwo;
 
 public class LessonTwo {
     public static void main(String[] args) {
-        invertArray();
-        System.out.println();
-        fillArr();
-        System.out.println();
-        multiplyarr();
-        System.out.println();
-        diagonalArr();
-        System.out.println();
-        maxMinArr();
-        System.out.println();
+       // invertArray();
+       // System.out.println();
+       // fillArr();
+       // System.out.println();
+       // multiplyarr();
+       // System.out.println();
+       // diagonalArr();
+       // System.out.println();
+       // maxMinArr();
+       // System.out.println();
+        chekBalance();
+        displaceArr(1);
+        
     }
         /*
-        5. Задать одномерный массив и найти в нем минимальный и максимальный элементы (без помощи интернета);
+        7. **** Написать метод, которому на вход подается одномерный массив и число n (может быть положительным, или отрицательным),
+        при этом метод должен сместить все элементы массива на n позиций. Элементы смещаются циклично.
+        Для усложнения задачи нельзя пользоваться вспомогательными массивами. Примеры: [ 1, 2, 3 ] при n = 1 (на один вправо) -> [ 3, 1, 2 ]; [ 3, 5, 6, 1] при n = -2 (на два влево) -> [ 6, 1, 3, 5 ].
+         При каком n в какую сторону сдвиг можете выбирать сами.
          */
+    private static void displaceArr(int displace) {
+        int[] arr = {1,2,3};
+           if (displace > 0){
+               for (int i = 0; i < arr.length ; i++) {
+
+                   System.out.print(arr[i]);
+               }
+
+           }
+
+    }
+
+    /*
+    6. ** Написать метод, в который передается не пустой одномерный целочисленный массив,
+     метод должен вернуть true, если в массиве есть место, в котором сумма левой и правой части массива равны.
+     Примеры: checkBalance([2, 2, 2, 1, 2, 2, || 10, 1]) → true, checkBalance([1, 1, 1, || 2, 1]) → true,
+     граница показана символами ||, эти символы в массив не входят
+     */
+    private static void chekBalance() {
+        int[] arr = {2, 2, 2, 1, 2, 2, 10, 1};
+    }
+
+    /*
+    5. Задать одномерный массив и найти в нем минимальный и максимальный элементы (без помощи интернета);
+     */
     private static void maxMinArr() {
     }
 
@@ -26,10 +57,13 @@ public class LessonTwo {
     private static void diagonalArr() {
         int[][] arr = new int[5][5];
         for (int i = 0; i <arr.length ; i++) {
-            for (int j = 0; j < arr[j].length; j++) {
-                
-                
+            for (int j = 0; j < arr[i].length; j++) {
+                if( i == j || j == arr[i].length -1 - i){
+                    arr[i][j] = 1;
+                }
+                System.out.print(arr[i][j]);
             }
+            System.out.println();
             
         }
     }
@@ -53,11 +87,16 @@ public class LessonTwo {
      */
     private static void fillArr() {
         int[] arr = new int[8];
-        for (int i = 0; i < arr.length; i++) {
 
+                for (int i = 0; i < arr.length; i++) {
 
+               arr[i] = i*3;
+
+            System.out.print(arr[i] + " ");
         }
+
     }
+
         /*
         1. Задать целочисленный массив, состоящий из элементов 0 и 1.
         Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ]. С помощью цикла и условия заменить 0 на 1, 1 на 0;
