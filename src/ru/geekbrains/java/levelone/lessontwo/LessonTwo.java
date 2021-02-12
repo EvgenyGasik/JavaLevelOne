@@ -22,17 +22,16 @@ public class LessonTwo {
         Для усложнения задачи нельзя пользоваться вспомогательными массивами. Примеры: [ 1, 2, 3 ] при n = 1 (на один вправо) -> [ 3, 1, 2 ]; [ 3, 5, 6, 1] при n = -2 (на два влево) -> [ 6, 1, 3, 5 ].
          При каком n в какую сторону сдвиг можете выбирать сами.
          */
-    private static void displaceArr(int displace) {
-        int[] arr = {1,2,3};
-           if (displace > 0){
-               for (int i = 0; i < arr.length ; i++) {
+   private static void displaceArr(int shift) {
+            int[] arr = {1,2,3};
+        for (int i = 0; i < arr.length ;i++) {
+            arr[i]=arr[i + shift];
+            System.out.println(arr[i]);
 
-                   System.out.print(arr[i]);
-               }
 
-           }
-
+        }
     }
+
 
     /*
     6. ** Написать метод, в который передается не пустой одномерный целочисленный массив,
