@@ -32,7 +32,7 @@ public class LessonFour {
             printMap();
             System.out.println();
             if (checkWin(O_DOT)) {
-                System.out.println("You lose");
+                System.out.println("You Lost");
                 break;
             }
             if (checkDraw()) {
