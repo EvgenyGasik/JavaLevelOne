@@ -1,5 +1,7 @@
 package ru.geekbrains.java.levelone.lessontwo;
 
+import java.util.Arrays;
+
 public class LessonTwo {
     public static void main(String[] args) {
        // invertArray();
@@ -10,10 +12,10 @@ public class LessonTwo {
        // System.out.println();
        // diagonalArr();
        // System.out.println();
-       maxMinArr();
+       //maxMinArr();
        // System.out.println();
        // chekBalance();
-        //displaceArr(1);
+        displaceArr(1);
         
     }
         /*
@@ -23,13 +25,13 @@ public class LessonTwo {
          При каком n в какую сторону сдвиг можете выбирать сами.
          */
   private static void displaceArr(int shift) {
-       //     int[] arr = {1,2,3};
-        //for (int i = 0; i < arr.length ;i++) {
-         //   arr[i]=arr[i + shift];
-         //   System.out.println(arr[i]);
+        int[] arr = {1,2,3,4};
+        for (int i = 0; i < arr.length; i++) {
+
+            }
+      }
 
 
-        }
 
 
     /*
@@ -38,7 +40,7 @@ public class LessonTwo {
      Примеры: checkBalance([2, 2, 2, 1, 2, 2, || 10, 1]) → true, checkBalance([1, 1, 1, || 2, 1]) → true,
      граница показана символами ||, эти символы в массив не входят
      */
-    private static void chekBalance() {
+        private static void chekBalance() {
         int[] arr = {2, 2, 2, 1, 2, 2, 10, 1};
     }
 

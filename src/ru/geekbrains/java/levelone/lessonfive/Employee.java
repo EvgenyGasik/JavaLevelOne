@@ -8,4 +8,20 @@ public class Employee {
     private double salary;
 
 
+    public Employee(String name, String position, int age, int phone, double salary) {
+        this.name = name;
+        this.position = position;
+        this.age = age;
+        this.phone = phone;
+        this.salary = salary;
+    }
+    public void inf(){
+        System.out.println("Сотрудник :" + name + "\nДолжность :" + position + "\nВозраст :" + age);
+    }
+
+    public int getAge(){
+        return age;
+    }
+
+
 }
