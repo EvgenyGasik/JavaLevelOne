@@ -17,7 +17,7 @@ public class CatPlateApp {
             }
 
         }
-        plate.addFood(50);
+        plate.addFood(40);
 
     }
 }
